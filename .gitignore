@@ -1,0 +1,82 @@
+################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+# don't check cache files for core
+*.cache
+
+# don't check commit node_modules, should be handled by nmp/bower
+node_modules
+
+# packages should be handled by nuget/nmp/bower
+packages
+
+
+bin
+
+#ignore PaymentAdmin.Api.XML since it is xcopied by the build events in PaymentAdmin.Api
+/Projects/PaymentAdmin.Api/PaymentAdmin.Api.XML
+
+#PaymentAdmin.DataObjects.XML
+
+/.vs
+
+
+#ignores blow this line was copied from https://gist.github.com/kmorcinek/2710267
+# User-specific files
+*.suo
+*.user
+*.sln.docstates
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+[Bb]in/
+[Oo]bj/
+# build folder is nowadays used for build scripts and should not be ignored
+**/build/*
+
+# NuGet Packages
+*.nupkg
+# The packages folder can be ignored because of Package Restore
+**/packages/*
+# except build/, which is used as an MSBuild target.
+!**/packages/build/
+# Uncomment if necessary however generally it will be regenerated when needed
+#!**/packages/repositories.config
+
+# MSTest test Results
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+
+*_i.c
+*_p.c
+*.ilk
+*.meta
+*.obj
+*.pch
+*.pdb
+*.pgc
+*.pgd
+*.rsp
+*.sbr
+*.tlb
+*.tli
+*.tlh
+*.tmp
+*.tmp_proj
+*.log
+*.vspscc
+*.vssscc
+.builds
+*.pidb
+*.log
+*.scc
+*.eslintcache
+
+Backup*
+/UpgradeLog*
+*.trx
+Projects/PaymentAdmin.Web/dist/*
+Projects/PaymentAdmin.Web/Views/Shared/_Layout.cshtml
